@@ -1,8 +1,7 @@
-require('../data/tableData.js')
-require('../data/waitingData.js')
+const tableData = require('../data/tableData.js')
+const waitingData = require('../data/waitingData.js')
 
 module.exports = function(app){
-    
     app.get("/api/tables", function(req, res) {
         res.json(tableData);
       });
@@ -21,5 +20,5 @@ module.exports = function(app){
             res.json(false);
           }
       })
-
 }
+console.log('api routes hit')
