@@ -15,3 +15,5 @@ require("./routing/htmlRoutes")(app);
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
   });
+
+  //Check this: https://stackoverflow.com/questions/11321635/nodejs-express-what-is-app-use
